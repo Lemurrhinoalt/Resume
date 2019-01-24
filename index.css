@@ -1,5 +1,7 @@
 /* CSS Document */
 
+
+
 .parallax {
   background-image: url("code_review.jpeg");
   min-height: 500px; 
@@ -7,14 +9,45 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display:block;
+  width: 100%;
 }
 
-.content {height:1000px;
+.content {
+	height:1000px;
 	background-color:black;
-	font-size:36px;color:white;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif"}
+	font-size:36px;
+	color:white;
+}
 
 body {
 	background-color: black;
 	color: white;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
+.spoilerbutton {
+	display:block;
+	border:none;
+	padding: 0px 0px; 
+	margin:10px 0px; 
+	font-size:100%; 
+	font-weight: bold;
+	color: white;
+	background-color: transparent; 
+	outline:0; 
+ }
+ .spoiler {
+	 overflow:hidden;
+}
+ .spoiler > div {
+	 -webkit-transition: all 0s ease;
+	 -moz-transition: margin 0s ease;
+	 -o-transition: all 0s ease;
+	 transition: margin 0s ease;
+}
+ .spoilerbutton[value="Show Contact Info"] + .spoiler > div {
+	 margin-top:-500%;
+}
+ .spoilerbutton[value="Hide Contact Info"] + .spoiler {
+	 padding:5px;
+} 
