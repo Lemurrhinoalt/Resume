@@ -24,6 +24,44 @@ footer {
   display:block;
   width: 100%;
 }
+.parallax3 {
+
+  background-image: url("VisualStudio.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  display:block;
+
+  width: 100%;
+
+}
+.parallax4 {
+
+  background-image: url("hl2.png");
+
+  min-height: 700px; 
+
+  background-attachment: fixed;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  display:block;
+
+  width: 100%;
+
+}
 .content {
 	height:1000px;
 	background-color:black;
